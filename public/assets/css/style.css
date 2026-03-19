@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    /*trava o aumento da largura e altura da pagina*/
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    font-family:roboto;
+    background-color: #f4f4f4; 
+    /*altura minima da janela do navegador*/
+    min-height: 100vh;
+    /*display flequixivel*/
+    display: flex;
+    /*alinha na vertical*/
+    align-items: center;
+    /*alinha na horizontal*/
+    justify-self: center;
+}
+.card{
+    display: flex;
+    background-color: white;
+    /*medida % por pixel da tela*/
+    width: 51.25rem;
+    /*bordas laterais*/
+    border-radius: 0.625rem;
+    /*sombra*/
+    box-shadow: 0,0.5rem,1.5rem rgba(0, 0, 0, 0.18);
+    /*direção da flequicibilidade*/
+    flex-direction: column;
+    /*espesura da borda interna*/
+    padding: 2rem;
+    /*distancias das tags com outras*/
+    gap: 1rem;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.text{
+    text-align: justify;
+    /*esbaço entre as linhas*/
+    line-height: 1.65rem;
+}
+
+.logos{
+   display: flex; 
+   align-items: center;
+   /*distribui os itens de forma simetrica*/
+   justify-content: space-between;
+}
+
+.logo-dsm{
+    width: 22.3125rem;
+    height: 7.4375rem;
+}
+
+.logo-fatec{
+    width: 10.125rem;
+    height: 3.875rem;
+}
+
+.logo-cps{
+    width: 12rem;
+    height: 8rem;
+}
+.actions{
+    display: flex;
+    gap: 0.8rem;
+}
+.btn-link{
+    background-color: #1f6feb;
+    padding: 0.7rem 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    /*espessura da fonte*/
+    font-weight: 500;
+    border: 0;
+}
+
+.btn-link:hover{
+    background-color: #195dca;
+}
+
+.btn_secondary{
+    background-color: #4b5563;
+}
+
+.btn_secondary:hover{
+    background-color: #374151 ;
+}
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.auth-form label{
+    font-weight: 500;
+}
+
+.auth-form input{
+    padding: 0.7rem 0.8rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #cbd5e1;
+    /*herda a fonte utilizada antes*/
+    font: inherit;
+}
+.link{
+    color: #1f6feb;
+    text-decoration: none;
+    font-weight: 700;
+}
